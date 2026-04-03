@@ -67,7 +67,10 @@ for(int r = 0; r < cereals.size(); r++)
     
    public static double findNetCarbsPerCup(Cereal c)
    {
-           return c.getCarbs() - c.getFiber();
+          
+    double netCarbs = c.getCarbs() - c.getFiber();
+    return netCarbs / c.getCups();
+}
    }
   
 
@@ -138,7 +141,7 @@ for(int r = 0; r < cereals.size(); r++)
       Cereal testCereal = new Cereal("Golden Crisp",100,0,11,0.88);
       System.out.println("Expected results: 11.0");
       System.out.println("Actual results:   " + findNetCarbsPerCup(testCereal));
-      
+      //Apple Jacks has 14.0 net carbs per cup
    }
 }
 
