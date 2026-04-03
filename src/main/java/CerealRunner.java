@@ -141,7 +141,12 @@ for(int r = 0; r < cereals.size(); r++)
       Cereal testCereal = new Cereal("Golden Crisp",100,0,11,0.88);
       System.out.println("Expected results: 11.0");
       System.out.println("Actual results:   " + findNetCarbsPerCup(testCereal));
-      //Apple Jacks has 14.0 net carbs per cup
+     /*
+ * Question 4:
+ * For Cocoa Puffs, the net carbs per cup is 12.0. 
+ * Take the total carbohydrates (13.0) and subtract the dietary fiber (1.0). 
+ * Since the serving size for Cocoa Puffs is 1.0 cup the final net carbs per cup is 12.0.
+ */
    }
 }
 
