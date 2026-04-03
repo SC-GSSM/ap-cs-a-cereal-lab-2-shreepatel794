@@ -146,7 +146,12 @@ for(int r = 0; r < cereals.size(); r++)
  * For Cocoa Puffs, the net carbs per cup is 12.0. 
  * Take the total carbohydrates (13.0) and subtract the dietary fiber (1.0). 
  * Since the serving size for Cocoa Puffs is 1.0 cup the final net carbs per cup is 12.0.
- */
+ 
+ 
+ * For Apple Jacks, the net carbs per cup is 14.0. 
+ * take 15.0 grams of carbohydrates minus 1.0 gram of dietary fiber.  
+ * The serving size for Apple Jacks is 1.0 cup, the net carbs per cup is 14.0.
+     */
    }
 }
 
