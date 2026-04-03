@@ -6,6 +6,13 @@
 * 
 ************/
 
+/* Question 4:
+Apple Jacks and Cocoa Puffs are used as examples to test the program.
+We can check if they are correctly handled in filterCarbsPerCup based
+on their carbs per cup values. This helps verify that the filtering
+and calculations in the program are working correctly.
+*/
+
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.io.File;
@@ -14,20 +21,6 @@ import java.io.FileReader;
 
 public class CerealRunner
 {
-
-   /* 
-Question 4:
-
-To test the methods, we should check specific cereals such as Apple Jacks
-and Cocoa Puffs to make sure the program is working correctly.
-
-For example, we can verify if \Apple Jacks and Cocoa Puffs are
-correct in filterCarbsPerCup based on their
-carbs per cup values.
-
-Using known cereals like Apple Jacks and Cocoa Puffs helps confirm
-that the calculations and filtering logic are accurate.
-*/
 
 /* Question 1: Write filterCarbsPerCup
    * This static method will return an ArrayList of cereal 
