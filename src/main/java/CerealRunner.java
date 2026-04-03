@@ -142,16 +142,11 @@ for(int r = 0; r < cereals.size(); r++)
       System.out.println("Expected results: 11.0");
       System.out.println("Actual results:   " + findNetCarbsPerCup(testCereal));
    }
-   /*
- * Question 4:
- * For Apple Jacks, the net carbs per cup is 14.0. 
- * This is calculated by taking 15.0g carbs - 1.0g fiber.
- *
- * For Cocoa Puffs, the net carbs per cup is 12.0. 
- * This is calculated by taking 13.0g carbs - 1.0g fiber.
- *
- * Both cereals have a serving size of 1.0 cup, so the 
- * net carbs per serving is the same as net carbs per cup.
- */
+/**
+     * Question 4:
+     * I used the findNetCarbsPerCup method to check Apple Jacks and Cocoa Puffs.
+     * Apple Jacks: 15.0 carbs - 1.0 fiber = 14.0 net carbs per cup.
+     * Cocoa Puffs: 13.0 carbs - 1.0 fiber = 12.0 net carbs per cup.
+     */
 }
 
