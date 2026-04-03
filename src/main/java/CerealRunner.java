@@ -143,13 +143,18 @@ for(int r = 0; r < cereals.size(); r++)
       System.out.println("Actual results:   " + findNetCarbsPerCup(testCereal));
    }
 
-   /* 
+/* 
 Question 4:
 
-An ArrayList is useful because you can add or remove things from it,
-unlike an array which has a fixed size. This makes it easier to store
-and manage a changing number of elements.
-like how Apple Jacks has a 14.0 carbs per cup value
+To test the methods, we should check specific cereals such as Apple Jacks
+and Cocoa Puffs to make sure the program is working correctly.
+
+For example, we can verify whether Apple Jacks and Cocoa Puffs are
+correctly included or excluded in filterCarbsPerCup based on their
+carbs per cup values.
+
+Using known cereals like Apple Jacks and Cocoa Puffs helps confirm
+that the calculations and filtering logic are accurate.
 */
 
 }
