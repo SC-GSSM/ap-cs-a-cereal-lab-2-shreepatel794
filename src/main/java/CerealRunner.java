@@ -10,7 +10,7 @@ import java.util.Scanner;
 import java.util.ArrayList;
 import java.io.File;
 import java.io.FileNotFoundException; 
-import java.io.FileReader;
+import java.io.FileReader
 
 public class CerealRunner
 {
@@ -25,9 +25,8 @@ public class CerealRunner
    {
       ArrayList <Cereal> temp = new ArrayList <Cereal>;
       for(int r=0; r<cereal.length; r++){
-         for(int c= 0; c<cereal[r].length; c++){
-            if(cereal[r][c].getCarbs() >= min && cereal[r][c].getCarbs() <= max){
-               temp.add(cereal[r][c]);
+            if(cereal[r].getCarbs() >= min && cereal[r].getCarbs() <= max){
+               temp.add(cereal[r]);
             }
          }
       }
@@ -42,14 +41,13 @@ public class CerealRunner
     
    public static Cereal highestPercentFiber()
    {
-      Cereal max = cereal[0][0];
+      Cereal max = cereal[0];
       double ratio = 0;
-      double highestRatio = (double) cereal[0][0].getFiber()/cereal[0][0].getCalories();
+      double highestRatio = (double) cereal[0].getFiber()/cereal[0].getCalories();
       for(int r = 0; r<cereal.length; r++){
-         for(int c=0; c<cereal[r].length; c++){
-            ratio = (double) cereal[r][c].getFiber()/cereal[r][c].getCalories();
+            ratio = (double) cereal[r].getFiber()/cereal[r].getCalories();
             if(ratio > highestRatio){
-               max = cereal[r][c];
+               max = cereal[r];
                highestRatio = ratio; 
             }
          }
