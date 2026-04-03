@@ -149,6 +149,7 @@ Question 4:
 An ArrayList is useful because you can add or remove things from it,
 unlike an array which has a fixed size. This makes it easier to store
 and manage a changing number of elements.
+like how Apple Jacks has a 14.0 carbs per cup value
 */
 
 }
