@@ -6,13 +6,6 @@
 * 
 ************/
 
-/* Question 4:
-Apple Jacks and Cocoa Puffs are used as examples to test the program.
-We can check if they are correctly handled in filterCarbsPerCup based
-on their carbs per cup values. This helps verify that the filtering
-and calculations in the program are working correctly.
-*/
-
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.io.File;
@@ -150,5 +143,9 @@ for(int r = 0; r < cereals.size(); r++)
       System.out.println("Expected results: 11.0");
       System.out.println("Actual results:   " + findNetCarbsPerCup(testCereal));
    }
+   /*Question 4:
+check Apple Jacks
+check Cocoa Puffs
+*/
 }
 
