@@ -24,14 +24,17 @@ public class CerealRunner
    public static  ArrayList<Cereal> filterCarbsPerCup(int min, int max)
    {
       ArrayList <Cereal> temp = new ArrayList <Cereal>();
-      for(int r=0; r<cereals.size(); r++){
-            if(cereals.get(r).getCarbs() >= min && cereals.get(r).getCarbs() <= max){
-               temp.add(cereals.get(r));
-            }
-         }
-      
-      return temp;
-   }
+for(int r = 0; r < cereals.size(); r++)
+    {
+        double carbsPerCup = cereals.get(r).getCarbs() / cereals.get(r).getCups();
+        
+        if(carbsPerCup >= min && carbsPerCup <= max)
+        {
+            temp.add(cereals.get(r));
+        }
+    }
+    return temp;
+}
    
    /* Question 2: Write highestPercentFiber
    * This static method will return the cereal with the highest 
@@ -41,19 +44,18 @@ public class CerealRunner
     
    public static Cereal highestPercentFiber()
    {
-      Cereal max = cereals.get(0);
-      double ratio = 0;
-      double highestRatio = (double) cereals.get(0).getFiber()/cereals.get(0).getCalories();
-      for(int r = 1; r<cereals.size(); r++){
-            ratio = (double) cereals.get(r).getFiber()/cereals.get(r).getCalories();
-            if(ratio > highestRatio){
-               max = cereals.get(r);
-               highestRatio = ratio; 
+     Cereal maxCereal = cereals.get(0);
+        double highestRatio = maxCereal.getFiber() / maxCereal.getCalories();
+
+        for (Cereal c : cereals) {
+            double currentRatio = c.getFiber() / c.getCalories();
+            if (currentRatio > highestRatio) {
+                highestRatio = currentRatio;
+                maxCereal = c;
             }
-         
-      }
-         return max; 
-   }
+        }
+        return maxCereal; 
+    }
 
   
    
