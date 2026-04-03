@@ -23,13 +23,13 @@ public class CerealRunner
    */
    public static  ArrayList<Cereal> filterCarbsPerCup(int min, int max)
    {
-      ArrayList <Cereal> temp = new ArrayList <Cereal>;
-      for(int r=0; r<cereal.length; r++){
-            if(cereal[r].getCarbs() >= min && cereal[r].getCarbs() <= max){
-               temp.add(cereal[r]);
+      ArrayList <Cereal> temp = new ArrayList <Cereal>();
+      for(int r=0; r<cereals.size(); r++){
+            if(cereals.get(r).getCarbs() >= min && cereals.get(r).getCarbs() <= max){
+               temp.add(cereals.get(r));
             }
          }
-      }
+      
       return temp;
    }
    
@@ -41,16 +41,16 @@ public class CerealRunner
     
    public static Cereal highestPercentFiber()
    {
-      Cereal max = cereal[0];
+      Cereal max = cereals.get(0);
       double ratio = 0;
-      double highestRatio = (double) cereal[0].getFiber()/cereal[0].getCalories();
-      for(int r = 0; r<cereal.length; r++){
-            ratio = (double) cereal[r].getFiber()/cereal[r].getCalories();
+      double highestRatio = (double) cereals.get(0).getFiber()/cereals.get(0).getCalories();
+      for(int r = 1; r<cereals.size(); r++){
+            ratio = (double) cereals.get(r).getFiber()/cereals.get(r).getCalories();
             if(ratio > highestRatio){
-               max = cereal[r];
+               max = cereals.get(r);
                highestRatio = ratio; 
             }
-         }
+         
       }
          return max; 
    }
