@@ -71,7 +71,7 @@ for(int r = 0; r < cereals.size(); r++)
     double netCarbs = c.getCarbs() - c.getFiber();
     return netCarbs / c.getCups();
 }
-   }
+   
   
 
    /*****************************************************************
