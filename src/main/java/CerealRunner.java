@@ -142,7 +142,7 @@ for(int r = 0; r < cereals.size(); r++)
       System.out.println("Expected results: 11.0");
       System.out.println("Actual results:   " + findNetCarbsPerCup(testCereal));
    }
-/**
+/*
      * Question 4:
      * I used the findNetCarbsPerCup method to check Apple Jacks and Cocoa Puffs.
      * Apple Jacks: 15.0 carbs - 1.0 fiber = 14.0 net carbs per cup.
