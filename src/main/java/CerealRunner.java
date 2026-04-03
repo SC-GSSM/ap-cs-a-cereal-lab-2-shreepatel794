@@ -14,6 +14,21 @@ import java.io.FileReader;
 
 public class CerealRunner
 {
+
+   /* 
+Question 4:
+
+To test the methods, we should check specific cereals such as Apple Jacks
+and Cocoa Puffs to make sure the program is working correctly.
+
+For example, we can verify if \Apple Jacks and Cocoa Puffs are
+correct in filterCarbsPerCup based on their
+carbs per cup values.
+
+Using known cereals like Apple Jacks and Cocoa Puffs helps confirm
+that the calculations and filtering logic are accurate.
+*/
+
 /* Question 1: Write filterCarbsPerCup
    * This static method will return an ArrayList of cereal 
    * objects with carbs per cup between min and max inclusive
@@ -142,20 +157,5 @@ for(int r = 0; r < cereals.size(); r++)
       System.out.println("Expected results: 11.0");
       System.out.println("Actual results:   " + findNetCarbsPerCup(testCereal));
    }
-
-/* 
-Question 4:
-
-To test the methods, we should check specific cereals such as Apple Jacks
-and Cocoa Puffs to make sure the program is working correctly.
-
-For example, we can verify whether Apple Jacks and Cocoa Puffs are
-correctly included or excluded in filterCarbsPerCup based on their
-carbs per cup values.
-
-Using known cereals like Apple Jacks and Cocoa Puffs helps confirm
-that the calculations and filtering logic are accurate.
-*/
-
 }
 
