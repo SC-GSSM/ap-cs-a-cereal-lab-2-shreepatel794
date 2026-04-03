@@ -142,10 +142,10 @@ for(int r = 0; r < cereals.size(); r++)
       Cereal testCereal = new Cereal("Golden Crisp",100,0,11,0.88);
       System.out.println("Expected results: 11.0");
       System.out.println("Actual results:   " + findNetCarbsPerCup(testCereal));
+      /* question 4 answer
+      Apple Jacks - 14.0
+      Coco Puffs - 12.0 
+      */
    }
-   /*Question 4:
-check Apple Jacks
-check Cocoa Puffs
-*/
 }
 
